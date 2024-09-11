@@ -1,0 +1,202 @@
+:root {
+  --color-primary: #1a73e8;
+  --color-black: #202124;
+  --color-white: #fff;
+  --color-clear: #ededed;
+  --color-gray: #b4b4b4;
+
+  --font-primary: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+  font-family: var(--font-primary);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: relative;
+}
+
+header{
+  overflow: hidden;
+}
+
+header nav{
+  float: right;
+  margin-right: 30px;
+  padding: 10px 0;
+}
+
+nav a{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+nav .nav-link{
+  color: var(--color-black);
+}
+
+nav .nav-link:hover{
+  text-decoration: underline;
+}
+
+nav .nav-apps{
+  padding: 5px;
+  border-radius: 50%;
+}
+
+nav .nav-apps:hover{
+  background-color: var(--color-clear);
+}
+
+nav .nav-apps img{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav .nav-login{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 100px;
+}
+
+nav .nav-login:hover{
+  box-shadow: 0 0 3px var(--color-primary);
+}
+
+/* ==========   Main Styles ========== */
+
+main {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.search-bar .label-search {
+  display: block;
+  border: 1px solid var(--color-gray);
+  padding: 10px 15px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  width: 584px;
+  overflow: hidden;
+}
+
+.search-bar .label-search:hover {
+  box-shadow: 0 0 3px var(--color-gray);
+}
+
+.search-bar .label-search img {
+  vertical-align: middle;
+}
+
+.label-search .search-icon, .label-search input {
+  float: left;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.label-search a {
+  float: right;
+}
+
+.label-search input {
+  border: none;
+  font-size: 16px;
+  width: 80%;
+}
+
+.label-search input:focus {
+  outline: none;
+}
+
+/* ==========   Buttons Styles ========== */
+
+.buttons{
+  margin-top: 30px;
+}
+
+.buttons button {
+  all: unset;
+  padding: 10px 20px;
+  background-color: var(--color-clear);
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--color-black);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.buttons button:hover{
+  outline: 1px solid var(--color-gray);
+}
+
+.buttons p {
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+/* ==========   Footer Styles ========== */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-clear);
+  padding: 15px 0px;
+}
+
+footer .country {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.footer-links{
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.footer-links ul{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.footer-links ul:first-child{
+  float: left;
+} 
+
+.footer-links ul:last-child{
+  float: right;
+}
+
+.footer-links ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-links ul a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 14px;
+}
+
+.footer-links ul a:hover{
+  text-decoration: underline;
+}
