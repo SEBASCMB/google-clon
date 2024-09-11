@@ -200,3 +200,69 @@ footer .country {
 .footer-links ul a:hover{
   text-decoration: underline;
 }
+
+/* ==========   Media Queries ========== */
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .search-bar .label-search {
+    width: 100%;
+    max-width: 584px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    float: none;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  main {
+    height: auto;
+    position: static;
+    margin: 50px auto;
+  }
+
+  .buttons button {
+    margin-bottom: 10px;
+  }
+
+  .footer-links ul:first-child,
+  .footer-links ul:last-child {
+    float: none;
+    text-align: center;
+  }
+
+  .footer-links ul li {
+    margin: 0 10px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav a {
+    margin: 0 5px;
+  }
+
+  .search-bar .label-search {
+    padding: 8px 10px;
+  }
+
+  .label-search input {
+    width: 70%;
+  }
+
+  .buttons button {
+    display: block;
+    width: 80%;
+    margin: 0 auto 10px;
+  }
+
+  footer .country {
+    text-align: center;
+  }
+}
